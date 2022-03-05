@@ -15,7 +15,7 @@ You should first create a new system script using the following commands:
 ```
 /system script add name="HE-DDNS" owner=tony \
 comment="Script to update Hurricane Electric DDNS" \
-policy=read,write,test
+policy=read,write,test source="PASTE CONTENTS OF DDNS_he.net.rsc HERE"
 ```
 Add a scheduler that calls the script every 5 minutes to send an update when IP changes.
 
